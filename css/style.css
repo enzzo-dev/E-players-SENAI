@@ -66,7 +66,7 @@ img{
     background-color: var(--red);
 }
 #menu-bars{
-    display: none;
+    display:none;
 }
 .banner{
     width: 100%;
@@ -166,7 +166,6 @@ img{
     font-size: 2.18em;
     margin-bottom: 0.4em;
     padding-top: 30px;
-
 }
 .about-text p{
     font-size: 1.125em;
@@ -198,15 +197,16 @@ img{
 .partida img{
     max-width: 3.375em;
 }
-.partida  > p{
-    margin: 14px 20px;
+.partida > p{
+    padding-top: 14px;
+    padding-left: 20px;
 }
-.time1 , .time2 {
+.time1{
     color: white;
     display: flex;
 }
 .time1 p , .time2 p{
-    padding: 8px 10px;
+    padding: 8px 8px;
     font-size: 20px;
 }
 .jogos-embreve{
@@ -217,30 +217,27 @@ img{
     text-transform: uppercase;
 }
 
-.time3 , .time4{
+.time3{
     color: white;
     display: flex;
 }
-.time3 p , .time4 p{
+.time3 p{
     padding: 12px 10px;
     font-size: 20px;
 }
 
-.time5 , .time6{
-    color: white;
-    display: flex;
-}
-.time5 p , .time6 p{
-    padding: 8px 10px;
-    font-size: 20px;
-}
 .noticia{
     width: 100%;
-    height: 700px;
+    height: 800px;
     border-top: 2px solid #001F70;
     display: flex;
-   
     background-color: rgb(12, 12, 12);
+}
+.content h2{
+    color: white;
+    padding-left: 100px;
+    padding-top: 20px;
+    font-size: 24px;
 }
 .noticias{
     width: 100%;
@@ -255,7 +252,7 @@ img{
     width: 200px;
     height: 300px;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-right: 100px;
     background: rgb(31, 31, 31);
     cursor: pointer;
@@ -315,7 +312,7 @@ footer{
     display: flex;
 }
 .menu-footer{
-    margin: 20px 70px;
+    margin: 30px 30px;
 }
 
 .menu-footer a{
@@ -331,14 +328,13 @@ footer{
     height: auto;
     display: flex;
     justify-content: center;
-    margin-left: 20%;
 }
 .logo img{
     max-width: 20em;
 }
 .email{
    width:600px;
-   height: 80px;
+   height: 110px;
    background-color: rgb(36, 36, 36);
    margin-top: 40px;
    margin-left: 100px;
@@ -347,36 +343,260 @@ footer{
     font-size: 20px;
     color: white;
     padding-left: 15px;
+    padding-top: 10px;
 }
 .email input[type=text]{
     width: 500px;
     height:35px;
-    margin-left: 15px;
-    margin-top: 5px;
+    margin-left:15px;
+    margin-top: 20px;
     padding-left: 10px;
     font-size: 18px;
 }
 .email input[type=submit]{
     width: 160px;
     height: 35px;
-    position: absolute;
+    position: relative;
     padding: 0 10px;
-    top: 232.7%;
-    left: 1472px;
+    bottom: 35px;
+    left: 355px;
     background-color: var(--red);
     color: white;
     text-transform: uppercase;
     font-size: 18px;
     border: none;
+    cursor:pointer;
 }
 @media screen and (max-width: 74.93em){
-
-}
+    .noticia{
+        height: 1300px;
+    }
+    .content h2{
+        color: white;
+        padding-left: 80px;
+        padding-top: 20px;
+    }
+    .noticia1 , .noticia2 , .noticia3 , .noticia4 , .noticia5 , .noticia6{
+        width: 180px;
+        height: 270px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .aside{
+        max-width:200px;
+        width: 100%;
+        height: 600px;
+        background-color: rgb(27, 27, 27);
+        margin-right: 250px;
+        margin-top: 60px;
+    }    
+    .email{
+        height: 140px;
+    }
+    .email h4{
+        font-size: 18px;
+    }
 
 @media screen and (max-width: 47.93em){
 
 }
 
-@media screen and (max-width: 35.93em){
-   
+@media screen and (max-width: 35.93em){ /*Mobile design*/
+    .menu{
+        width: 100%;
+        max-width: 50em;
+        z-index: 99;
+    }
+    .menu ul{
+        flex-direction: column;
+        z-index: 99;
+        background-color: red;
+        display: none;
+    }
+    .menu ul li{
+        padding: 5px 0;
+    }
+    .menu ul li a{
+        padding: 5px 10px;
+    }
+    .flex-center-bt > a > img{
+        width: 200px;
+        height: 80px;
+    }
+    #menu-bars{
+        display: block;
+        margin-left: 140px;
+    }
+    .menu li:hover a{
+        text-decoration: underline;
+    }
+    .banner{
+        width: 100%;
+        height: 430px;
+        position: relative;
+    }
+    .banner-position{
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(0, 0, 255, 0.377); */
+        position: absolute;
+        top: 0;
+    }
+    .banner-content{
+        width: 80%;
+        height: 300px;
+        /* background-color: rgba(222, 184, 135, 0.356); */
+        margin: 150px auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .banner-text{
+        width: 100%;
+        height: 100%;
+        /* background-color: chartreuse; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+    .banner-text h1{
+        font-size: 2.62em;
+    }
+    .banner-text p{
+        font-size: 1.87em;
+        text-align: center;
+    }
+    .banner-text a{
+        font-size: 1.57em;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+        background-color: var(--red);
+        padding: 0.3em 0.7em;
+        border-radius: 0.5em;
+        margin-top: 1em;
+    }
+    .jogos{
+        width: 100%;
+        height: 7.5em;
+        /* background-color: chartreuse; */
+    }
+    .jogos ul{
+        list-style-type: none;
+        width: 100%;
+    }
+    .jogos ul a:hover img{
+        transition: 0.2s;
+        transform: scale(1.1);
+    }
+    .about{
+        width: 100%;
+        height: 31.25em;
+        background-color: var(--blue);
+        position: relative;
+    
+    }
+    .angulation{
+        width: 100%;
+        height: 24em;
+        background-color: #000;
+        transform: skewY(-3deg)
+    }
+    .about-position{
+        width: 100%;
+        height: 100%;
+        /* background-color: rgba(255, 0, 0, 0.397); */
+        position: absolute;
+        top: 0;
+    }
+    .about-text{
+        width: 100%;
+        color: #fff;
+        text-align: justify;
+    }
+    .about-text h2{
+        font-size: 1.50em;
+        margin-bottom: 0.4em;
+        padding-top: 10px;
+    }
+    .about-text p{
+        font-size: 1.1em;
+        margin-bottom: 1em;
+    }
+    .about-position img{
+        display: none;
+    }
+    .noticia{
+        height: 2030px;
+    }
+    .noticia1 , .noticia2 , .noticia3 , .noticia4 , .noticia5 , .noticia6{
+        width: 210px;
+        height: 290px;
+        flex-wrap: wrap;
+        margin-bottom: 350px;
+        margin-right: 20px;
+    }
+    .aside{
+        display:none;
+    }  
+    footer{
+        width: 100%;
+        height: 100px;
+        display: block;
+    }
+    footer p{
+        color: gray;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    .menu-footer{
+        margin: 10px 40px;
+        display: block;
+    }
+    
+    .menu-footer a{
+        color: rgb(87, 86, 86);
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+    .logo{
+        display: none;
+    }
+    .email{
+       width:350px;
+       height: 210px;
+       background-color: rgb(36, 36, 36);
+       margin: 40px 50px;
+    }
+    .email h4{
+        font-size: 20px;
+        color: white;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+    .email input[type=text]{
+        width: 300px;
+        height:35px;
+        margin-top: 20px;
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    .email input[type=submit]{
+        width:   180px;
+        height: 35px;   
+        padding: 0 10px; 
+        margin: 30px 80px;
+        position: static;
+        background-color: var(--red);
+        color: white;
+        text-transform: uppercase;
+        font-size: 16px;
+        border: none;
+        cursor:pointer;
+        border-radius: 15px;
+    }
 }
